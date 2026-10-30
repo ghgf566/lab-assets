@@ -1,8 +1,6 @@
 # lab-assets
 
-研究室 AI 閘道站（千問大小姐）的網站靜態資產。
-
-## 建議使用的檔案（已優化）
+研究室 AI 閘道站（千問大小姐）的網站靜態資產。五個檔案皆已依顯示需求縮放並重編碼為 WebP，合計約 335 KB。
 
 | 用途 | 檔案 | 尺寸 | 重量 |
 |---|---|---|---|
@@ -12,15 +10,14 @@
 | 表情插畫（相框姿勢） | `img/meme.webp` | 830×1106 | 72 KB |
 | 表情插畫（愛心眼） | `img/emotion.webp` | 840×859 | 88 KB |
 
-五檔合計約 335 KB。URL 請用 `https://raw.githubusercontent.com/ghgf566/lab-assets/main/img/<檔名>`，
-用 `/main/` 而不要用某一個 commit 的固定位址，否則日後換圖不會生效。
+## 取用方式
 
-## 未優化的原始上傳（保留但建議改指向上面的版本）
+```
+https://raw.githubusercontent.com/ghgf566/lab-assets/main/img/<檔名>
+```
 
-| 檔案 | 尺寸 | 重量 | 問題 |
-|---|---|---|---|
-| `img/emotion.png` | 1056×1080 RGBA | 1.80 MB | PNG 存插畫，體積約為 webp 版 20 倍 |
-| `img/logo.png` | 1254×1254 | 335 KB | 檔名是 .png，內容其實是 JPEG（GitHub 仍以 image/png 送出）；且站內顯示尺寸只有約 28×28 |
+請用 `/main/`，不要用某個 commit 的固定位址（例如 `…/c9f8247…/img/logo.png`）：commit 位址会把檔案鎖死在當下那個 commit，日後換圖不會生效。
+另註：raw.githubusercontent 有邊緣快取，刪除或替換檔案後約一两分鐘才看的到變化。
 
 ## 著作權與出處
 
